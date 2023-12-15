@@ -4,7 +4,8 @@
             <!-- (div.lang>div.lang_word+img.lang_strel)+(div.curr>div.curr_word+img.curr_strel)+div.number+div.callback+(div.messange>img.messange_whats+img.messange_teleg) -->
             <div class="header_left">
                 <img class="avatar" src="../assets/avatar.png" alt="">
-                <div class="Username">Log in</div>
+                <div v-if="name!=null"  @click="$emit('open')" class="Username">{{ name + ' ' + surname }}</div>
+                <div v-else  @click="$emit('open')" class="Username">Зарегистрироваться</div>
             </div>
             <div class="header_right">
                 <div class="number">+ 971 4 608 68 08</div>
@@ -40,7 +41,19 @@
 </template>
 
 <script>
+export default {
+    props: [
+        'name',
+        'surname'
+    ],
 
+    data () {
+        return {
+            Name : this.name,
+            Surname : this.surname
+        }
+    }
+}
 </script>
 
 <style scoped>

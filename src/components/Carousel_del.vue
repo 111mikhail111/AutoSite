@@ -1,18 +1,18 @@
 <template>
     <div class="delivery">
         <div class="zayavka_nad">
-Leave a request for delivery<br> to your hometown
+Оствте заявку для доставки<br> в ваш родной город
         </div>
         <Carousel>
             <Slide :key="1">
                 <div class="carousel__item">
                     <div class="num_zag">
                         <div class="number_of_slide">1</div>
-                        <div class="zagolovok_of_slide">Application</div>
+                        <div class="zagolovok_of_slide">Заявка</div>
                     </div>
                     
                     <div class="text_of_slide">
-                      <div class="text_of_slide_text">You call us or leave a request on the website and our manager will contact you.</div>
+                      <div class="text_of_slide_text">Вы звоните нам или оставляете заявку на сайте и с Вами связывается наш менеджер.</div>
                     </div>
                 </div>
             </Slide>
@@ -20,11 +20,11 @@ Leave a request for delivery<br> to your hometown
                 <div class="carousel__item">
                     <div class="num_zag">
                         <div class="number_of_slide">2</div>
-                        <div class="zagolovok_of_slide">Contract</div>
+                        <div class="zagolovok_of_slide">Договор</div>
                     </div>
                     
                     <div class="text_of_slide">
-                      <div class="text_of_slide_text">We coordinate the car, the working conditions and sign the contract. Make an advance payment.</div>
+                      <div class="text_of_slide_text">Согласовываем автомобиль, условия работы и подписываем договор. Вносите предоплату.</div>
                     </div>
                 </div>
             </Slide>
@@ -32,11 +32,11 @@ Leave a request for delivery<br> to your hometown
                 <div class="carousel__item">
                     <div class="num_zag">
                         <div class="number_of_slide">3</div>
-                        <div class="zagolovok_of_slide">Payment</div>
+                        <div class="zagolovok_of_slide">Оплата</div>
                     </div>
                     
                     <div class="text_of_slide">
-                      <div class="text_of_slide_text">After signing the contract, an invoice is issued for the car.</div>
+                      <div class="text_of_slide_text">После подписания договора, выставляется инвойс за автомобиль.</div>
                     </div>
                 </div>
             </Slide>
@@ -44,11 +44,11 @@ Leave a request for delivery<br> to your hometown
                 <div class="carousel__item">
                     <div class="num_zag">
                         <div class="number_of_slide">4</div>
-                        <div class="zagolovok_of_slide">Delivery</div>
+                        <div class="zagolovok_of_slide">Доставка</div>
                     </div>
                     
                     <div class="text_of_slide">
-                      <div class="text_of_slide_text">You expect from 30 to 60 days (depending on the city and distance).</div>
+                      <div class="text_of_slide_text">Ожидаете от 30 до 60 дней (зависит от страны и пункта назначения).</div>
                     </div>
                 </div>
             </Slide>
@@ -56,11 +56,11 @@ Leave a request for delivery<br> to your hometown
                 <div class="carousel__item">
                     <div class="num_zag">
                         <div class="number_of_slide">5</div>
-                        <div class="zagolovok_of_slide">Request</div>
+                        <div class="zagolovok_of_slide">Спасибо)</div>
                     </div>
                     
                     <div class="text_of_slide">
-                      <div class="text_of_slide_text">Leave your contact details and we will get back to you.</div>
+                      <div class="text_of_slide_text">Оставьте контактные данные и мы обязательно свяжемся с вами</div>
                     </div>
                 </div>
             </Slide>

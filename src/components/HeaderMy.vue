@@ -9,7 +9,7 @@
             </div>
             <div class="header_right">
                 <div class="number">+ 971 4 608 68 08</div>
-                <div class="callback">Request a callback</div>
+                <div class="callback">Обратиться в поддержку</div>
                 <div class="messange">
                     <img src="../assets/Telegram.png" alt="" class="messange_whats">
                     <img src="../assets/WhatsApp.png" alt="" class="messange_teleg">
@@ -21,19 +21,19 @@
             <!--img.logo+ul.under_header_small_ul>li.under_header_small_li*3 -->
             <img src="../assets/logoHeader.png" alt="" class="logo">
             <ul class="under_header_small_ul">
-                <li class="under_header_small_li">FOR SALE</li>
-                <li class="under_header_small_li">AUTOPARTS</li>
-                <li class="under_header_small_li">SERVICING</li>
+                <a href="index.html"><li class="under_header_small_li">ГЛАВНАЯ</li></a>    
+                <a href="second.html"><li class="under_header_small_li">О НАС</li></a>
+                <a href="*"><li class="under_header_small_li">ПОДДЕРЖКА</li></a> 
             </ul>
         </container>
         <continer class="under_header_big">
             <!-- (div.under_header_big_center>div.under_header_big_center_up+div.under_header_big_center_down)+button.lets_go -->
             <div class="under_header_big_center">
-                <div class="under_header_big_center_up">FIND YOUR NEXT CAR</div>
-                <div class="under_header_big_center_down">PREMIUM CARS FROM DUBAI</div>
+                <div class="under_header_big_center_up">НАЙДИ СВОЮ МАШИНУ</div>
+                <div class="under_header_big_center_down">ПРЕМИУМ МАШИНЫ ИЗ ДУБАЯ</div>
             </div>
             <div class="under_header_big_bottom">
-                <button class="under_header_big_but">LET’S GO</button>
+                <button class="under_header_big_but">ПОЕХАЛИ</button>
             </div>
             
         </continer>
@@ -60,6 +60,13 @@ export default {
 @font-face {
 	font-family: 'eurostyle'; 
 	src: url(../assets/Fonts/eurostileextended_roman_dtc.ttf); 
+}
+
+a:active, /* активная/посещенная ссылка */
+a:hover,  /* при наведении */
+a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 template {

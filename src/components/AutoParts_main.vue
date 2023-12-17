@@ -1,15 +1,18 @@
 <template>
 
 <section class="carParts" id="Parts">
-        <div class="carParts_nad">AUTOPARTS</div>
+        <div class="carParts_nad">ЧАСТИ АВТОМОБИЛЯ</div>
         <div class="typesRow">
-            <div class="typesRow_card typesRow_card1" v-on:click="setEng">Engines</div>
-            <div class="typesRow_card typesRow_card2" v-on:click="setMod">External Modules</div>
-            <div class="typesRow_card typesRow_card3" v-on:click="setPet">Tires</div>
+            <div class="typesRow_card typesRow_card1" v-on:click="setEng">Двигатели</div>
+            <div class="typesRow_card typesRow_card2" v-on:click="setMod">Внешние модули</div>
+            <div class="typesRow_card typesRow_card3" v-on:click="setPet">Шины</div>
         </div>
-    <section class="engines" v-if="isEng">
-            <div class="engine_row">
-                <div class="engine_card">
+</section>
+
+<section>
+    <Carousel v-if="isEng" :itemsToShow="3.1" :wrapAround="true" :transition="500">
+        <Slide :key="1">
+            <div class="engine_card">
                     <div class="engine_name">Engine BMW B38</div>
                     <img src="../assets/engine1.png" alt="" class="engine1_img">
                     <div class="engine_harac_all">
@@ -25,60 +28,9 @@
                         </div>
                     </div>
                     <button class="engine_price">58 750 AED</button>
-                </div>
-                <div class="engine_card">
-                    <div class="engine_name">Engine BMW B38</div>
-                    <img src="../assets/engine1.png" alt="" class="engine1_img">
-                    <div class="engine_harac_all">
-                        <div class="engine_harac_col">
-                            <div class="engine_harac">Number of cylinders:</div>
-                            <div class="engine_harac">Number of valves:</div>
-                            <div class="engine_harac">Volume:</div>
-                        </div>
-                        <div class="engine_harac_col1">
-                            <div class="engine_harac1">3</div>
-                            <div class="engine_harac1">12</div>
-                            <div class="engine_harac1">1500 ml</div>
-                        </div>
-                    </div>
-                    <button class="engine_price">58 750 AED</button>
-                </div>
-                <div class="engine_card">
-                    <div class="engine_name">Engine BMW B38</div>
-                    <img src="../assets/engine1.png" alt="" class="engine1_img">
-                    <div class="engine_harac_all">
-                        <div class="engine_harac_col">
-                            <div class="engine_harac">Number of cylinders:</div>
-                            <div class="engine_harac">Number of valves:</div>
-                            <div class="engine_harac">Volume:</div>
-                        </div>
-                        <div class="engine_harac_col1">
-                            <div class="engine_harac1">3</div>
-                            <div class="engine_harac1">12</div>
-                            <div class="engine_harac1">1500 ml</div>
-                        </div>
-                    </div>
-                    <button class="engine_price">58 750 AED</button>
-                </div>
-                <div class="engine_card">
-                    <div class="engine_name">Engine BMW B38</div>
-                    <img src="../assets/engine1.png" alt="" class="engine1_img">
-                    <div class="engine_harac_all">
-                        <div class="engine_harac_col">
-                            <div class="engine_harac">Number of cylinders:</div>
-                            <div class="engine_harac">Number of valves:</div>
-                            <div class="engine_harac">Volume:</div>
-                        </div>
-                        <div class="engine_harac_col1">
-                            <div class="engine_harac1">3</div>
-                            <div class="engine_harac1">12</div>
-                            <div class="engine_harac1">1500 ml</div>
-                        </div>
-                    </div>
-                    <button class="engine_price">58 750 AED</button>
-                </div>
             </div>
-            <div class="engine_row">
+        </Slide> 
+        <Slide :key="2">
                 <div class="engine_card">
                     <div class="engine_name">Engine BMW B38</div>
                     <img src="../assets/engine1.png" alt="" class="engine1_img">
@@ -96,6 +48,8 @@
                     </div>
                     <button class="engine_price">58 750 AED</button>
                 </div>
+        </Slide>
+        <Slide :key="3">
                 <div class="engine_card">
                     <div class="engine_name">Engine BMW B38</div>
                     <img src="../assets/engine1.png" alt="" class="engine1_img">
@@ -113,6 +67,8 @@
                     </div>
                     <button class="engine_price">58 750 AED</button>
                 </div>
+        </Slide>
+        <Slide :key="4">
                 <div class="engine_card">
                     <div class="engine_name">Engine BMW B38</div>
                     <img src="../assets/engine1.png" alt="" class="engine1_img">
@@ -130,82 +86,89 @@
                     </div>
                     <button class="engine_price">58 750 AED</button>
                 </div>
+        </Slide>
+    </Carousel>
+    <Carousel v-if="isMod" :itemsToShow="3.1" :wrapAround="true" :transition="500">
+        <Slide :key="1">
                 <div class="engine_card">
-                    <div class="engine_name">Engine BMW B38</div>
-                    <img src="../assets/engine1.png" alt="" class="engine1_img">
+                    <div class="engine_name">Подогрев сидений</div>
+                    <img src="../assets/sid.png" alt="" class="engine1_img">
                     <div class="engine_harac_all">
                         <div class="engine_harac_col">
-                            <div class="engine_harac">Number of cylinders:</div>
-                            <div class="engine_harac">Number of valves:</div>
-                            <div class="engine_harac">Volume:</div>
+                            <div class="engine_harac">Температура:</div>
+                            <div class="engine_harac">Количество мест:</div>
+                            <div class="engine_harac">Гарантия:</div>
                         </div>
                         <div class="engine_harac_col1">
-                            <div class="engine_harac1">3</div>
-                            <div class="engine_harac1">12</div>
-                            <div class="engine_harac1">1500 ml</div>
+                            <div class="engine_harac1">20-40 С</div>
+                            <div class="engine_harac1">1-6</div>
+                            <div class="engine_harac1">2 года</div>
                         </div>
                     </div>
                     <button class="engine_price">58 750 AED</button>
                 </div>
-            </div>
-    </section>
-    <section class="Modules" v-if="isMod">
-            <div class="engine_row">
+        </Slide>
+        <Slide :key="2">
                 <div class="engine_card">
-                    <div class="engine_name">AZARD 2113</div>
-                    <img src="../assets/spoiler_vid.png" alt="" class="engine1_img">
-                    
+                    <div class="engine_name">Видеорегистратор</div>
+                    <img src="../assets/videoreg.png" alt="" class="engine1_img">
+                    <div class="engine_harac_all">
+                        <div class="engine_harac_col">
+                            <div class="engine_harac">Время съемки:</div>
+                            <div class="engine_harac">Память:</div>
+                            <div class="engine_harac">Гарантия:</div>
+                        </div>
+                        <div class="engine_harac_col1">
+                            <div class="engine_harac1">30 дней</div>
+                            <div class="engine_harac1">10 гб</div>
+                            <div class="engine_harac1">3 года</div>
+                        </div>
+                    </div>
                     <button class="engine_price">58 750 AED</button>
                 </div>
+        </Slide>
+        <Slide :key="3">
                 <div class="engine_card">
-                    <div class="engine_name">AZARD 2113</div>
-                    <img src="../assets/spoiler_vid.png" alt="" class="engine1_img">
-                    
+                    <div class="engine_name">Сигнализация</div>
+                    <img src="../assets/sign.png" alt="" class="engine1_img">
+                    <div class="engine_harac_all">
+                        <div class="engine_harac_col">
+                            <div class="engine_harac">Громкость:</div>
+                            <div class="engine_harac">Чувствительность:</div>
+                            <div class="engine_harac">Гарантия:</div>
+                        </div>
+                        <div class="engine_harac_col1">
+                            <div class="engine_harac1">80 дб</div>
+                            <div class="engine_harac1">Средняя</div>
+                            <div class="engine_harac1">2 года</div>
+                        </div>
+                    </div>
                     <button class="engine_price">58 750 AED</button>
                 </div>
+        </Slide>
+        <Slide :key="4">
                 <div class="engine_card">
-                    <div class="engine_name">AZARD 2113</div>
-                    <img src="../assets/spoiler_vid.png" alt="" class="engine1_img">
-                    
+                    <div class="engine_name">Музыкальный центр</div>
+                    <img src="../assets/music.png" alt="" class="engine1_img">
+                    <div class="engine_harac_all">
+                        <div class="engine_harac_col">
+                            <div class="engine_harac">Громкость</div>
+                            <div class="engine_harac">Радио:</div>
+                            <div class="engine_harac">Гарантия:</div>
+                        </div>
+                        <div class="engine_harac_col1">
+                            <div class="engine_harac1">20-100 дб</div>
+                            <div class="engine_harac1">Есть</div>
+                            <div class="engine_harac1">3 года</div>
+                        </div>
+                    </div>
                     <button class="engine_price">58 750 AED</button>
                 </div>
-                <div class="engine_card">
-                    <div class="engine_name">AZARD 2113</div>
-                    <img src="../assets/spoiler_vid.png" alt="" class="engine1_img">
-                    
-                    <button class="engine_price">58 750 AED</button>
-                </div>
-            </div>
-            <div class="engine_row">
-                <div class="engine_card">
-                    <div class="engine_name">AZARD 2113</div>
-                    <img src="../assets/spoiler_vid.png" alt="" class="engine1_img">
-                    
-                    <button class="engine_price">58 750 AED</button>
-                </div>
-                <div class="engine_card">
-                    <div class="engine_name">AZARD 2113</div>
-                    <img src="../assets/spoiler_vid.png" alt="" class="engine1_img">
-                   
-                    <button class="engine_price">58 750 AED</button>
-                </div>
-                <div class="engine_card">
-                    <div class="engine_name">AZARD 2113</div>
-                    <img src="../assets/spoiler_vid.png" alt="" class="engine1_img">
-                    
-                    <button class="engine_price">58 750 AED</button>
-                </div>
-                <div class="engine_card">
-                    <div class="engine_name">AZARD 2113</div>
-                    <img src="../assets/spoiler_vid.png" alt="" class="engine1_img">
-                    
-                    <button class="engine_price">58 750 AED</button>
-                </div>
-            </div>
-    </section>
-    <section class="Tires" v-if="isPet">
-            <div class="engine_row">
-                <div class="engine_card">
+        </Slide>
+    </Carousel>
+    <Carousel v-if="isPet" :itemsToShow="3.1" :wrapAround="true" :transition="500">
+        <Slide :key="1">
+            <div class="engine_card">
                     <div class="engine_name">Summer tires</div>
                     <img src="../assets/tire-sum.png" alt="" class="engine1_img">
                     <div class="engine_harac_all">
@@ -221,8 +184,10 @@
                         </div>
                     </div>
                     <button class="engine_price">58 750 AED</button>
-                </div>
-                <div class="engine_card">
+                </div>  
+        </Slide>
+        <Slide :key="2">
+            <div class="engine_card">
                     <div class="engine_name">Winter tires</div>
                     <img src="../assets/tire-win.png" alt="" class="engine1_img">
                     <div class="engine_harac_all">
@@ -239,7 +204,9 @@
                     </div>
                     <button class="engine_price">58 750 AED</button>
                 </div>
-                <div class="engine_card">
+        </Slide>
+        <Slide :key="3">
+            <div class="engine_card">
                     <div class="engine_name">All season</div>
                     <img src="../assets/tire-all.png" alt="" class="engine1_img">
                     <div class="engine_harac_all">
@@ -256,7 +223,9 @@
                     </div>
                     <button class="engine_price">58 750 AED</button>
                 </div>
-                <div class="engine_card">
+        </Slide>
+        <Slide :key="4">
+            <div class="engine_card">
                     <div class="engine_name">Sports tires</div>
                     <img src="../assets/tire-sport.png" alt="" class="engine1_img">
                     <div class="engine_harac_all">
@@ -273,9 +242,8 @@
                     </div>
                     <button class="engine_price">58 750 AED</button>
                 </div>
-            </div>
-            
-    </section>
+        </Slide>
+    </Carousel>
 </section>
 
 </template>
@@ -283,8 +251,9 @@
 <script>
 export default {
     components: {
-        
-    },
+    Carousel,
+    Slide,
+  },
     data () {
       return {
         isEng: false,
@@ -313,9 +282,55 @@ export default {
       },
     }
   };
+import { Carousel, Slide } from 'vue3-carousel'
+import 'vue3-carousel/dist/carousel.css'
+
+
 </script>
 
 <style scoped>
+.carousel__slide {
+  padding: 5px;
+}
+
+.carousel {
+  margin-bottom: 20px;
+}
+
+
+.carousel__track {
+  transform-style: preserve-3d;
+}
+
+.carousel__slide--sliding {
+  transition: 0.5s;
+}
+
+.carousel__slide {
+  opacity: 0.9;
+  transform: rotateY(-20deg) scale(0.8);
+}
+
+.carousel__slide--active ~ .carousel__slide {
+  transform: rotateY(20deg) scale(0.8);
+}
+
+.carousel__slide--prev {
+  opacity: 1;
+  transform: rotateY(-10deg) scale(0.9);
+}
+
+.carousel__slide--next {
+  opacity: 1;
+  transform: rotateY(10deg) scale(0.9);
+}
+
+.carousel__slide--active {
+  opacity: 1;
+  transform: rotateY(0) scale(1);
+}
+
+
 @font-face {
 	font-family: 'eurostyle'; 
 	src: url(../assets/Fonts/eurostileextended_roman_dtc.ttf); 
@@ -458,7 +473,7 @@ export default {
   }
 
   .engine_card {
-    width: 22%;
+    width: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -468,5 +483,7 @@ export default {
     border-radius: 10px;
   }
 
-  
+  .carousel {
+    font-family: 'eurostyle';
+  }
 </style>

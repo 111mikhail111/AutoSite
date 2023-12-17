@@ -2,18 +2,13 @@
     <header>
             <!-- (div.lang>div.lang_word+img.lang_strel)+(div.curr>div.curr_word+img.curr_strel)+div.number+div.callback+(div.messange>img.messange_whats+img.messange_teleg) -->
             <div class="header_left">
-                <div class="lang">
-                    <div class="lang_word">English</div>
-                    <img src="../assets/HeaderArrow.png" alt="" class="lang_strel">
-                </div>
-                <div class="curr">
-                    <div class="curr_word">Currency: AED</div>
-                    <img src="../assets/HeaderArrow.png" alt="" class="curr_strel">
-                </div>
+                <img class="avatar" src="../assets/avatar.png" alt="">
+                <div v-if="name!=null"  @click="$emit('open')" class="Username">{{ name + ' ' + surname }}</div>
+                <div v-else  @click="$emit('open')" class="Username">Зарегистрироваться</div>
             </div>
             <div class="header_right">
                 <div class="number">+ 971 4 608 68 08</div>
-                <div class="callback">Request a callback</div>
+                <div class="callback">Обратиться в поддержку</div>
                 <div class="messange">
                     <img src="../assets/Telegram.png" alt="" class="messange_whats">
                     <img src="../assets/WhatsApp.png" alt="" class="messange_teleg">
@@ -21,6 +16,15 @@
             </div>
             
         </header>
+        <container class="under_header_small">
+            <!--img.logo+ul.under_header_small_ul>li.under_header_small_li*3 -->
+            <img src="../assets/logoHeader.png" alt="" class="logo">
+            <ul class="under_header_small_ul">
+                <a href="index.html"><li class="under_header_small_li">ГЛАВНАЯ</li></a>    
+                <a href="second.html"><li class="under_header_small_li">О НАС</li></a>
+                <a href="*"><li class="under_header_small_li">ПОДДЕРЖКА</li></a> 
+            </ul>
+        </container>
 </template>
 
 <script>
@@ -41,12 +45,22 @@ template {
 
 header {
     display: flex;
-    color: #000;
+    color: #fff;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
-    padding-bottom: 0;
+    background-color: rgb(49, 49, 49);
+    font-family: 'eurostyle';
+    height: 55px;
 }
+
+a:active, /* активная/посещенная ссылка */
+a:hover,  /* при наведении */
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+
 .header_right {
     display: flex;
     width: 40%;
@@ -56,30 +70,32 @@ header {
 .header_left {
     display: flex;
     width: 15%;
-    justify-content: space-between;
+    justify-content: flex-start;
     font-family: 'Inter', sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
     letter-spacing: 0em;
     text-align: left;
+    align-items: center;
     padding-left:  52px;
 }
 
-.header_left img {
-   height: 5px; 
-   width: 10px;
-   margin-left: 5px;
-}
+
 
 .callback {
     font-family: 'Inter', sans-serif;
     padding-top: 3px;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
 }
 
-header {
-    background-color: #F1F0EB;
+.callback:hover {
+    font-size: 15px;
 }
+
+
+
 .number {
     font-size: 14px;
     font-weight: 400;
@@ -93,11 +109,46 @@ header {
 header img {
     width: 25px;
     margin-right: 10px;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+header img:hover {
+    width: 23px;
+    
 }
 
 .lang, .curr {
     display: flex;
     align-items: center;
+}
+
+.under_header_small {
+    display: flex;
+    border-top: solid white 1px;
+    border-bottom: solid white 1px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding: 10px;
+    align-items: center;
+    justify-content: left;
+    font-family: 'eurostyle';
+    background-color: rgb(49, 49, 49);
+    margin-bottom: 0px;
+}
+
+.under_header_small img {
+    padding-right: 260px;
+    padding-left: 50px ;
+}
+
+.under_header_small ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.under_header_small li {
+    margin-left: 20px;
 }
 
 </style>

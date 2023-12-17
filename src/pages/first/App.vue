@@ -3,11 +3,11 @@
     <!-- Ваши основные контент и компоненты здесь -->
     <section class="mainscreen">
       <MyHeader @open="Open" :name="name" :surname="surname"></MyHeader>
-      <Categories_main></Categories_main>
-      <Carousel_cars></Carousel_cars>
-      <AutoParts_main></AutoParts_main>
-      <Pluses_main></Pluses_main>
-      <Carousel_del></Carousel_del>
+      <Categories_main @opencars="ShowCars" @opendel="ShowDel" @openmods="ShowMod"></Categories_main>
+      <Carousel_cars v-if="ifcars"></Carousel_cars>
+      <AutoParts_main v-if="ifmod"></AutoParts_main>
+      <Pluses_main v-if="ifser"></Pluses_main>
+      <Carousel_del v-if="ifser"></Carousel_del>
       <MyFooter></MyFooter>
       <Registration_main v-if="ifReg" @close="Close" @name="Getname"></Registration_main>
     </section>
@@ -22,7 +22,6 @@
     <!-- Использование компонента Footer -->
     <div>{{ name }}</div>
     <div>{{ surname }}</div>
-    <a href="second.html">lala</a>
   </div>
 </template>
 
@@ -66,7 +65,10 @@ export default {
     return {
       name: null,
       surname: null,
-      ifReg: false
+      ifReg: false,
+      ifcars: false,
+      ifmod: false,
+      ifser: false
     }
   },
 
@@ -83,7 +85,30 @@ export default {
 
     Open() {
       this.ifReg = true;
+    },
+
+    ShowCars() {
+      
+      if (this.ifcars == false) this.ifcars = true;
+      else this.ifcars = false;
+      this.ifmod = false;
+      this.ifser == false;
+    },
+
+    ShowMod() {
+      this.ifcars = false;
+      this.ifser = false;
+      if (this.ifmod == false) this.ifmod = true;
+      else this.ifmod = false;
+    },
+
+    ShowDel() {
+      this.ifmod = false;
+      this.ifcars = false;
+      if (this.ifser == false) this.ifser = true;
+      else this.ifser = false;
     }
+
   }
 
   

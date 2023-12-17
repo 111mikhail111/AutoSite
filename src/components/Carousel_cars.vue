@@ -1,6 +1,6 @@
 <template>
   <section class="deals">
-          <div class="deals_nad">HOT DEALS</div>
+          <div class="deals_nad">ГОРЯЧИЕ ПРЕДЛОЖЕНИЯ</div>
   </section >
   <div class="main">
     

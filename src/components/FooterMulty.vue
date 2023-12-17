@@ -2,12 +2,12 @@
     <footer>
           <div class="footer_left">
               <img src="../assets/logoF.png" alt="" class="logo_footer">
-              <div class="footer_underlogo">Buy, autoparts or service<br> premium cars from Dubai</div>
+              <div class="footer_underlogo">Покупайте автомобили, их авточасти<br> и доставку в Россию из Дубая</div>
               <ul class="footer_ul1">
-                  <li class="footer_ul1_lis">FOR SALE</li>
-                  <li class="footer_ul1_lis">AUTOPARTS</li>
-                  <li class="footer_ul1_lis">SERVICING</li>
-                  <li class="footer_ul1_lis">ABOUT US</li>
+                  <li class="footer_ul1_lis">ГОРЯЧИЕ ПРЕДЛОЖЕНИЯ</li>
+                  <li class="footer_ul1_lis">ЧАСТИ АВТОМОБИЛЯ</li>
+                  <li class="footer_ul1_lis">СЕРВИЧ</li>
+                  <li class="footer_ul1_lis">О НАС</li>
               </ul>
           </div>
          
@@ -15,7 +15,7 @@
             
               <div class="footer_right_up">
                   <div class="call">
-                    <div class="callat">Call the office at:</div>
+                    <div class="callat">Звоните в офис:</div>
                     <div class="telef">+8-904-614-01-73</div>
                   </div>
                   <div>
@@ -24,10 +24,10 @@
                   </div>
                   
                   
-                  <button class="right_request">Request a callback</button></div>
+                  <button class="right_request">Обратится в поддержку</button></div>
               <div class="footer_right_down">
-                  <div class="footer_ouraddress">Our adress</div>
-                  <div class="footer_address">Somewhere in Russia, Saint petersburg</div>
+                  <div class="footer_ouraddress">Наш адрес</div>
+                  <div class="footer_address">Где то в России, Санкт-Петербурге</div>
               </div>
           </div>
       </footer>
@@ -192,6 +192,7 @@
       font-family: 'Inter', sans-serif;
       font-weight: bold;
       border-radius: 5px;
+      font-size: 18px;
   }
   
   .footer_right_down {

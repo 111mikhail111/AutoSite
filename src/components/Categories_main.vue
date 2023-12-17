@@ -1,23 +1,24 @@
 <template>
     <section class="categories">
           <div class="cars_for_sale">
-              <div class="cars_for_sale_nad">CARS FOR SALE</div>
-              <div class="cars_for_sale_more">MORE</div>
+              <div class="cars_for_sale_nad">ГОРЯЧИЕ ПРЕДЛОЖЕНИЯ</div>
+              <div @click="$emit('opencars')" class="cars_for_sale_more">БОЛЬШЕ</div>
           </div>
           <div class="categories_right">
               <div class="right_autoparts">
-                  <div class="autoparts_nad">AUTOPARTS</div>
-                  <div class="cars_for_sale_more">MORE</div>
+                  <div class="autoparts_nad">ЧАСТИ АВТОМОБИЛЯ</div>
+                  <div @click="$emit('openmods')" class="cars_for_sale_more">БОЛЬШЕ</div>
               </div>
               <div class="right_servicing">
-                  <div class="servising_nad">SERVICING</div>
-                  <div class="cars_for_sale_more">MORE</div>
+                  <div class="servising_nad">СЕРВИС</div>
+                  <div @click="$emit('opendel')" class="cars_for_sale_more">БОЛЬШЕ</div>
               </div>
           </div>
     </section>
 </template>
 
 <script>
+
 
 </script>
 
@@ -55,8 +56,8 @@
     margin-left: auto;
     margin-bottom: 30px;
     margin-right: 30px;
-    width: 150px;
-    height: 65px;
+    width: 250px;
+    height: 80px;
     border: solid 1px white;
     border-radius: 10px;
     display: flex;

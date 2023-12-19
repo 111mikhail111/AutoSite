@@ -19,9 +19,6 @@
       <Carousel_cars></Carousel_cars>
       <MainMa1></MainMa1>
     </section>
-    <!-- Использование компонента Footer -->
-    <div>{{ name }}</div>
-    <div>{{ surname }}</div>
   </div>
 </template>
 

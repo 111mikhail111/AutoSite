@@ -23,7 +23,7 @@
             <ul class="under_header_small_ul">
                 <a href="index.html"><li class="under_header_small_li">ГЛАВНАЯ</li></a>    
                 <a href="second.html"><li class="under_header_small_li">О НАС</li></a>
-                <a href="*"><li class="under_header_small_li">ПОДДЕРЖКА</li></a> 
+                <a href="help.html"><li class="under_header_small_li">ПОДДЕРЖКА</li></a> 
             </ul>
         </container>
         <continer class="under_header_big">

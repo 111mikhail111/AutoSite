@@ -12,5 +12,11 @@ module.exports = {
       title: 'About',
       chunks: [ 'chunk-vendors', 'chunk-common', 'second']
     },
+    'help' : {
+      entry: './src/pages/help/main.js',
+      template: 'public/help.html',
+      title: 'Help',
+      chunks: [ 'chunk-vendors', 'chunk-common', 'help']
+    }
   }
 }

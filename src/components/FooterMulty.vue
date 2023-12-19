@@ -4,10 +4,10 @@
               <img src="../assets/logoF.png" alt="" class="logo_footer">
               <div class="footer_underlogo">Покупайте автомобили, их авточасти<br> и доставку в Россию из Дубая</div>
               <ul class="footer_ul1">
-                  <li class="footer_ul1_lis">ГОРЯЧИЕ ПРЕДЛОЖЕНИЯ</li>
-                  <li class="footer_ul1_lis">ЧАСТИ АВТОМОБИЛЯ</li>
-                  <li class="footer_ul1_lis">СЕРВИЧ</li>
-                  <li class="footer_ul1_lis">О НАС</li>
+                
+                  <li class="footer_ul1_lis"><a href="index.html">ГЛАВНАЯ</a></li>
+                  <li class="footer_ul1_lis"><a href="second.html">О НАС</a></li>
+                  <li class="footer_ul1_lis">ПОДДЕРЖКА</li>
               </ul>
           </div>
          
@@ -210,6 +210,13 @@
         text-align: left;
         margin-bottom: 8px;
   }
+
+  a:active, /* активная/посещенная ссылка */
+a:hover,  /* при наведении */
+a {
+  text-decoration: none;
+  color: #000000;
+}
   
   </style>
   

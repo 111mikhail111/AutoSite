@@ -17,9 +17,9 @@
                     <img src="../assets/engine1.png" alt="" class="engine1_img">
                     <div class="engine_harac_all">
                         <div class="engine_harac_col">
-                            <div class="engine_harac">Number of cylinders:</div>
-                            <div class="engine_harac">Number of valves:</div>
-                            <div class="engine_harac">Volume:</div>
+                            <div class="engine_harac">Количество цилиндров:</div>
+                            <div class="engine_harac">Количество клапанов:</div>
+                            <div class="engine_harac">Объем:</div>
                         </div>
                         <div class="engine_harac_col1">
                             <div class="engine_harac1">3</div>
@@ -36,9 +36,9 @@
                     <img src="../assets/engine1.png" alt="" class="engine1_img">
                     <div class="engine_harac_all">
                         <div class="engine_harac_col">
-                            <div class="engine_harac">Number of cylinders:</div>
-                            <div class="engine_harac">Number of valves:</div>
-                            <div class="engine_harac">Volume:</div>
+                            <div class="engine_harac">Количество цилиндров:</div>
+                            <div class="engine_harac">Количество клапанов:</div>
+                            <div class="engine_harac">Объем:</div>
                         </div>
                         <div class="engine_harac_col1">
                             <div class="engine_harac1">3</div>
@@ -55,9 +55,9 @@
                     <img src="../assets/engine1.png" alt="" class="engine1_img">
                     <div class="engine_harac_all">
                         <div class="engine_harac_col">
-                            <div class="engine_harac">Number of cylinders:</div>
-                            <div class="engine_harac">Number of valves:</div>
-                            <div class="engine_harac">Volume:</div>
+                            <div class="engine_harac">Количество цилиндров:</div>
+                            <div class="engine_harac">Количество клапанов:</div>
+                            <div class="engine_harac">Объем:</div>
                         </div>
                         <div class="engine_harac_col1">
                             <div class="engine_harac1">3</div>
@@ -74,9 +74,9 @@
                     <img src="../assets/engine1.png" alt="" class="engine1_img">
                     <div class="engine_harac_all">
                         <div class="engine_harac_col">
-                            <div class="engine_harac">Number of cylinders:</div>
-                            <div class="engine_harac">Number of valves:</div>
-                            <div class="engine_harac">Volume:</div>
+                            <div class="engine_harac">Количество цилиндров:</div>
+                            <div class="engine_harac">Количество клапанов:</div>
+                            <div class="engine_harac">Объем:</div>
                         </div>
                         <div class="engine_harac_col1">
                             <div class="engine_harac1">3</div>
@@ -169,18 +169,18 @@
     <Carousel v-if="isPet" :itemsToShow="3.1" :wrapAround="true" :transition="500">
         <Slide :key="1">
             <div class="engine_card">
-                    <div class="engine_name">Summer tires</div>
+                    <div class="engine_name">Летние шины</div>
                     <img src="../assets/tire-sum.png" alt="" class="engine1_img">
                     <div class="engine_harac_all">
                         <div class="engine_harac_col">
-                            <div class="engine_harac">Size:</div>
-                            <div class="engine_harac">Outside temp:</div>
-                            <div class="engine_harac">Tread pattern:</div>
+                            <div class="engine_harac">Размер:</div>
+                            <div class="engine_harac">Внешняя темп.:</div>
+                            <div class="engine_harac">Рис. покрытия:</div>
                         </div>
                         <div class="engine_harac_col1">
-                            <div class="engine_harac1">13-22 inches</div>
-                            <div class="engine_harac1">more 7 deg</div>
-                            <div class="engine_harac1">Light</div>
+                            <div class="engine_harac1">13-22 дюйма</div>
+                            <div class="engine_harac1">более 7 град.</div>
+                            <div class="engine_harac1">Легкий</div>
                         </div>
                     </div>
                     <button class="engine_price">58 750 AED</button>
@@ -188,18 +188,18 @@
         </Slide>
         <Slide :key="2">
             <div class="engine_card">
-                    <div class="engine_name">Winter tires</div>
+                    <div class="engine_name">Зимние шины</div>
                     <img src="../assets/tire-win.png" alt="" class="engine1_img">
                     <div class="engine_harac_all">
                         <div class="engine_harac_col">
-                            <div class="engine_harac">Size:</div>
-                            <div class="engine_harac">Outside temp:</div>
-                            <div class="engine_harac">Tread pattern:</div>
+                            <div class="engine_harac">Размер:</div>
+                            <div class="engine_harac">Внешняя темп.:</div>
+                            <div class="engine_harac">Рис. покрытия:</div>
                         </div>
                         <div class="engine_harac_col1">
-                            <div class="engine_harac1">13-22 inches</div>
-                            <div class="engine_harac1">less 7 deg</div>
-                            <div class="engine_harac1">Hard</div>
+                            <div class="engine_harac1">13-22 дюйма</div>
+                            <div class="engine_harac1">менее 7 град.</div>
+                            <div class="engine_harac1">Жесткий</div>
                         </div>
                     </div>
                     <button class="engine_price">58 750 AED</button>
@@ -207,18 +207,18 @@
         </Slide>
         <Slide :key="3">
             <div class="engine_card">
-                    <div class="engine_name">All season</div>
+                    <div class="engine_name">Всесезонные</div>
                     <img src="../assets/tire-all.png" alt="" class="engine1_img">
                     <div class="engine_harac_all">
                         <div class="engine_harac_col">
-                            <div class="engine_harac">Size:</div>
-                            <div class="engine_harac">Outside temp:</div>
-                            <div class="engine_harac">Tread pattern:</div>
+                            <div class="engine_harac">Размер:</div>
+                            <div class="engine_harac">Внешняя температура:</div>
+                            <div class="engine_harac">Рис. покрытия:</div>
                         </div>
                         <div class="engine_harac_col1">
-                            <div class="engine_harac1">13-22 inches</div>
+                            <div class="engine_harac1">13-22 дюйма</div>
                             <div class="engine_harac1">-</div>
-                            <div class="engine_harac1">Light</div>
+                            <div class="engine_harac1">Легкий</div>
                         </div>
                     </div>
                     <button class="engine_price">58 750 AED</button>
@@ -226,18 +226,18 @@
         </Slide>
         <Slide :key="4">
             <div class="engine_card">
-                    <div class="engine_name">Sports tires</div>
+                    <div class="engine_name">Спортивные шины</div>
                     <img src="../assets/tire-sport.png" alt="" class="engine1_img">
                     <div class="engine_harac_all">
                         <div class="engine_harac_col">
-                            <div class="engine_harac">Size:</div>
-                            <div class="engine_harac">Outside temp:</div>
-                            <div class="engine_harac">Tread pattern:</div>
+                            <div class="engine_harac">Размер:</div>
+                            <div class="engine_harac">Внешняя темп.:</div>
+                            <div class="engine_harac">Рис. покрытия:</div>
                         </div>
                         <div class="engine_harac_col1">
                             <div class="engine_harac1">13-22 inches</div>
                             <div class="engine_harac1">-</div>
-                            <div class="engine_harac1">Ultra Hard</div>
+                            <div class="engine_harac1">Очень жесткий</div>
                         </div>
                     </div>
                     <button class="engine_price">58 750 AED</button>

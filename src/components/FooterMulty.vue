@@ -7,7 +7,7 @@
                 
                   <li class="footer_ul1_lis"><a href="index.html">ГЛАВНАЯ</a></li>
                   <li class="footer_ul1_lis"><a href="second.html">О НАС</a></li>
-                  <li class="footer_ul1_lis">ПОДДЕРЖКА</li>
+                  <li class="footer_ul1_lis"><a href=help.html>ПОДДЕРЖКА</a></li>
               </ul>
           </div>
          
@@ -16,15 +16,15 @@
               <div class="footer_right_up">
                   <div class="call">
                     <div class="callat">Звоните в офис:</div>
-                    <div class="telef">+8-904-614-01-73</div>
+                    <div class="telef">+8-904-111-11-11</div>
                   </div>
                   <div>
                     <a href="https://vk.com/id325016321"><img src="../assets/WhatsApp.png" alt="" class="whats"></a>
-                    <a href="https://vk.com/id325016321"><img src="../assets/Telegram.png" alt="" class="telega"></a>
+                    <a href="https://web.telegram.org/k/"><img src="../assets/Telegram.png" alt="" class="telega"></a>
                   </div>
                   
                   
-                  <button class="right_request">Обратится в поддержку</button></div>
+                  <a href="help.html"><button class="right_request">Обратится в поддержку</button></a></div>
               <div class="footer_right_down">
                   <div class="footer_ouraddress">Наш адрес</div>
                   <div class="footer_address">Где то в России, Санкт-Петербурге</div>

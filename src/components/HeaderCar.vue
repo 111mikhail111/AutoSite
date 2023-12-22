@@ -7,18 +7,21 @@
                 <div v-else  @click="$emit('open')" class="Username">Зарегистрироваться</div>
             </div>
             <div class="header_right">
-                <div class="number">+ 971 4 608 68 08</div>
-                <div class="callback">Обратиться в поддержку</div>
+                <div class="number">+ 8-904-111-11-11</div>
+                <div class="callback"><a href="help.html">Обратиться в поддержку</a></div>
                 <div class="messange">
-                    <img src="../assets/Telegram.png" alt="" class="messange_whats">
-                    <img src="../assets/WhatsApp.png" alt="" class="messange_teleg">
+                    <a href="https://vk.com/id325016321"><img  src="../assets/Telegram.png" alt="" class="messange_whats"> </a>
+                    <a href="https://vk.com/id325016321"> <img  src="../assets/WhatsApp.png" alt="" class="messange_teleg"></a>
+                    
+                    
                 </div>
             </div>
             
         </header>
         <container class="under_header_small">
             <!--img.logo+ul.under_header_small_ul>li.under_header_small_li*3 -->
-            <img src="../assets/logoHeader.png" alt="" class="logo">
+            <a href="index.html"><img href="index.html" src="../assets/logoHeader.png" alt="" class="logo"></a>
+            
             <ul class="under_header_small_ul">
                 <a href="index.html"><li class="under_header_small_li">ГЛАВНАЯ</li></a>    
                 <a href="second.html"><li class="under_header_small_li">О НАС</li></a>

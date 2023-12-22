@@ -8,11 +8,11 @@
                 <div v-else  @click="$emit('open')" class="Username">Зарегистрироваться</div>
             </div>
             <div class="header_right">
-                <div class="number">+ 971 4 608 68 08</div>
-                <div class="callback">Обратиться в поддержку</div>
+                <div class="number">+ 8-904-614-01-73</div>
+                <div class="callback"><a href=help.html>Обратиться в поддержку</a></div>
                 <div class="messange">
-                    <img src="../assets/Telegram.png" alt="" class="messange_whats">
-                    <img src="../assets/WhatsApp.png" alt="" class="messange_teleg">
+                    <img href="https://vk.com/id325016321" src="../assets/Telegram.png" alt="" class="messange_whats">
+                    <img href="https://vk.com/id325016321" src="../assets/WhatsApp.png" alt="" class="messange_teleg">
                 </div>
             </div>
             

@@ -56,7 +56,7 @@
                 <div class="carousel__item">
                     <div class="num_zag">
                         <div class="number_of_slide">5</div>
-                        <div class="zagolovok_of_slide">Спасибо)</div>
+                        <div class="zagolovok_of_slide">Спасибо</div>
                     </div>
                     
                     <div class="text_of_slide">
